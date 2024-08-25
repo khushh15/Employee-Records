@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        background-color:rgb(4, 38, 48);
+      }
+div {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+table {
+  /* border-collapse: collapse; */
+  width: 100%;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border: 5px solid #f1f1f1;
+  text-align: center;
+  background-color: aqua;
+  color:   #082f49;;
+}
+h1 {
+  color: white;
+  text-align: center;
+  padding-bottom: 30px;
+  margin-top: 10px;
+}
+
+input {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 0px;
+  border-radius: 5px;
+  color:rgb(4, 38, 48);
+}
+form {
+  padding: 30px;
+  border: double 1px  white;
+  border-radius: 25px;
+  
+}
+label {
+  color: rgb(16, 15, 15);
+  font: bold;
+  font-size: larger;
+  color: white;
+}
+
+#btn {
+  background-color: rgb(68, 222, 214);
+  color: rgb(4, 38, 48);
+  font-size: large;
+  width: 100%;
+  border-radius: 5px;
+  font-weight: 600;
+}
+#btn:hover{
+  background-color:#f43f5e;
+  color: white;
+}
+table th {
+  color: rgb(19, 17, 17);
+}
+
+/* tr {
+  height: 5px;
+} */
+
+    </style>
+<body>
+    <h1>Employee Records</h1>
+
+    <div>
+        <form id="myform">
+            <label for="">Employee Name</label><br>
+            <input
+            id="name" 
+            type="text"
+            placeholder="Enter your name"
+            required >
+            <br>
+
+            <label for="">Employee id</label><br>
+            <input 
+            id="employeeid"
+            type="number"
+            placeholder="Enter your id"
+            required>
+            <br>
+
+            <label for="">Department</label><br>
+            <select  id="department" required>
+                <option value=""> Select Department</option>
+                <option value="Frontend">Frontend</option>
+                <option value="Backend">Backend</option>
+                <option value="Operation">Operation</option>
+                <option value="Hr">hr</option>
+            </select>
+            <br>
+
+            <label for="">Experience</label><br>
+            <input
+            id="exp" 
+            type="number"
+            placeholder="experience in years"
+            required>
+            <br>
+
+            <label for="">Email Address</label><br>
+            <input
+            id="email" 
+            type="email"
+            placeholder="enter email address"
+            required>
+            <br>
+
+            <label for="">Mobile Number</label><br>
+            <input
+            id="mbl" 
+            type="number"
+            placeholder="enter mobile number"
+            required>
+            <br>
+
+            <input id="btn" type="submit">
+
+
+        </form>
+        <table>
+          <thead>
+             <tr>
+                <th>Name</th>
+                <th>Employee ID</th>
+                <th>Department </th>
+                <th>Experience in years</th>
+                <th>Email Address</th>
+                <th>Mobile No.</th>
+                <th>Role</th>
+                <th>Delete</th>
+             </tr>
+         </thead>   
+         <tbody>
+            <!-- append your data -->
+         </tbody>
+        </table>
+    </div>
+</body>
+</html>
+<script src="employee.js"></script>
